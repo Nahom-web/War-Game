@@ -12,6 +12,7 @@ public class WarGame {
 
 	private static void startGame() {
 		Scanner input = new Scanner(System.in);
+		
 		game = new War();
 
 		ArrayList<Player> players = game.start();

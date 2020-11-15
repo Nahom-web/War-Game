@@ -16,6 +16,54 @@ public class War {
 		pile2 = new ArrayDeque<Card>();
 		players = new ArrayList<Player>();
 		kitty = new ArrayList<Card>();
+	}	
+
+	public Queue<Card> getPile1() {
+		return pile1;
+	}
+
+	public void setPile1(Queue<Card> pile1) {
+		this.pile1 = pile1;
+	}
+
+	public Queue<Card> getPile2() {
+		return pile2;
+	}
+
+	public void setPile2(Queue<Card> pile2) {
+		this.pile2 = pile2;
+	}
+
+	public Player getPlayer1() {
+		return player1;
+	}
+
+	public void setPlayer1(Player player1) {
+		this.player1 = player1;
+	}
+
+	public Player getPlayer2() {
+		return player2;
+	}
+
+	public void setPlayer2(Player player2) {
+		this.player2 = player2;
+	}
+
+	public ArrayList<Player> getPlayers() {
+		return players;
+	}
+
+	public void setPlayers(ArrayList<Player> players) {
+		this.players = players;
+	}
+
+	public ArrayList<Card> getKitty() {
+		return kitty;
+	}
+
+	public void setKitty(ArrayList<Card> kitty) {
+		this.kitty = kitty;
 	}
 
 	public ArrayList<Player> start() {
@@ -28,7 +76,7 @@ public class War {
 		}
 
 		player1 = new Player("Nahom", pile1);
-		player2 = new Player("Serge", pile2);
+		player2 = new Player("Ibrahim", pile2);
 
 		players.add(player1);
 		players.add(player2);
@@ -108,4 +156,4 @@ public class War {
 		}
 	}
 
-}
+} // War class

@@ -11,6 +11,38 @@ public class Deck {
 	public Deck() {
 		deck = new ArrayDeque<Card>();
 		createDeck();
+	}	
+
+	public String[] getRanks() {
+		return ranks;
+	}
+
+	public void setRanks(String[] ranks) {
+		this.ranks = ranks;
+	}
+	
+	public String[] getSuits() {
+		return suits;
+	}
+
+	public void setSuits(String[] suits) {
+		this.suits = suits;
+	}
+
+	public Integer[] getValues() {
+		return values;
+	}
+
+	public void setValues(Integer[] values) {
+		this.values = values;
+	}
+
+	public Queue<Card> getDeck() {
+		return deck;
+	}
+
+	public void setDeck(Queue<Card> deck) {
+		this.deck = deck;
 	}
 
 	private Queue<Card> createDeck() {
