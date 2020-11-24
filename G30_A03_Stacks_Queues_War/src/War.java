@@ -141,7 +141,7 @@ public class War {
 			return player2;
 	}
 
-	private void playWar(Card card, Card card2) {
+	protected void playWar(Card card, Card card2) {
 		Player p1 = this.players.get(0);
 		Player p2 = this.players.get(1);
 

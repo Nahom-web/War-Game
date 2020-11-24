@@ -60,4 +60,22 @@ class WarTest {
 
 		assertEquals(26, war.pile2.size(), "Checking player 2 hand size");
 	}
+	
+	@Test
+	void test5() {
+		Deck deck = new Deck();
+
+		War war = new War();
+
+		ArrayList<Player> players = war.start();
+		
+		players.get(0).setCurrentCard(new Card("king", "diamonds", 13));
+		
+		players.get(1).setCurrentCard(new Card("kind", "spades", 13));
+		
+		war.playWar(players.get(0).getCurrentCard(), players.get(1).getCurrentCard());
+		
+		assertEquals(8, war.kitty.size(), "Checking the kitty size");
+	
+	}
 }
